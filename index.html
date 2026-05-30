@@ -1,0 +1,182 @@
+# Mel Mobile Massage — Clean Website Structure
+
+## index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mel's Mobile Massage</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Mel Mobile Massage</h1>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Book</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h2>Luxury Wellness Delivered To You</h2>
+      <p>
+        Experience relaxation, rejuvenation, and professional spa care in the comfort of your own space.
+      </p>
+
+      <a href="#booking" class="hero-btn">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2>About Us</h2>
+
+      <p>
+        At Mel's Mobile Massage, we believe wellness should feel effortless, luxurious, and deeply personal.
+        Our mobile spa services bring comfort, relaxation, and beauty directly to your home.
+      </p>
+
+      <p>
+        Whether you're looking to unwind after a long day or treat yourself to premium self-care,
+        we create unforgettable wellness experiences tailored to you.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="images/about.jpg" alt="Massage Spa">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2>Best Seller</h2>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <img src="images/full body massage 2.jpg" alt="Massage">
+        <h3>Full Body Massage</h3>
+        <p>Relaxing therapeutic massages designed to relieve stress and tension.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/sweedish massage.jpg" alt="Sweedish Massage">
+        <h3>Sweedish Massage</h3>
+        <p>Smooth, flowing strokes, kneading, rhytjimic movement and light stretches to relieve muscle tension and enhance joint mobility.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/aroamatherapy.jpeg" alt="Aromatherapy">
+        <h3>Aromatherapy</h3>
+        <p>Blending soothing scents with tairlored touch to deeply relax the body and mind.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+
+   <section class="services">
+    <h2>Our Services</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/full body massage.jpg" alt="Full Body Massage">
+            <h3>Full Body Message</h3>
+            <p>Relaxing therapeutic massages designed to relieve stress and tension.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/deep tissue massage.jpg" alt="Deep Tissue Massage">
+            <h3>Deep Tissue Massage</h3>
+            <p>Targeted firm pressure and focused techniques work deep muscle layers to release tension.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/facials.jpeg" alt="Facials">
+            <h3>Facials</h3>
+            <p>Indulge in a soothing facial massage that helps melt away stress while promoting relaxation and a natural glow.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/aroamatherapy.jpeg" alt="Aromatherapy">
+            <h3>Aromatherapy</h3>
+            <p>Personalized aromatherapy massage blending soothing scents with tailored touch.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/foot massage.jpeg" alt="Foot Massage">
+            <h3>Foot Massage</h3>
+            <p>Indulge in a calming foot massage designed to ease tired muscles, improve relaxation, and restore comfort</p>
+        </div>
+
+        <div class="card">
+            <img src="images/hot stone massage.jpg" alt="Hot Stone Massage">
+            <h3>Hot Stone Massage</h3>
+            <p>Warmed stones are placed and used alongside skilled massage techniques to deliver soothing heat</p>
+        </div>
+
+    </div>
+</section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <h2>Book Your Experience</h2>
+
+    <form class="booking-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+
+      <select required>
+        <option value="">Select Service</option>
+        <option>Full Body Massage</option>
+        <option>Sweedish Massage</option>
+        <option>Hot Stone Massage</option>
+        <option>Deep Cleansing Facial</option>
+        <option>Manicure/Pedicure</option>
+        <option>Deep Tissue Massage</option>
+      </select>
+
+      <textarea placeholder="Additional Notes"></textarea>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Mel's Mobile Massage. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
